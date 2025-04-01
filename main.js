@@ -10,6 +10,19 @@
     
 // Zone Déclarations
 
+function changerBackgroundCanvas(couleur, canvas) {
+
+    canvas.style.backgroundColor = couleur;
+    
+}
+
+function tailleCanevas(partParentWidth, partParentHeight, canvas) {
+
+    canvas.width = window.innerWidth*partParentWidth;
+    canvas.height = window.innerHeight*partParentHeight;
+   return [canvas[0].width, canvas[0].height];        
+}
+
 function tracerDroiteCanevas(pt1_absc, pt1_ord, pt2_absc, pt2_ord, couleur, context) {
 
     context.beginPath();
@@ -57,8 +70,8 @@ function tracerParallelogramme(liste3pts, couleur, context) {
 // Zone Déclarations
 
 // Zone d'exécution du programme
-//elementsDom.changerBackgroundCanvas("rgba(133, 126, 126, 0.58)", canvas[0]);
-    //dimCanvas = tailleCanevas(1, 1, canvas[0]);
+      changerBackgroundCanvas("rgba(133, 126, 126, 0.58)", canvas[0]);
+      dimCanvas = tailleCanevas(1, 1, canvas[0]);
     //tracerArcDeCercleV3(30, [200,200],[0,2], "rgb(4, 114, 133)");
     //afficherDimensionElement("canvas");    
     //ajouterGrilleRepere(dimCanvas[0], dimCanvas[1], 50, "rgba(255, 255, 255, 0.16)");
