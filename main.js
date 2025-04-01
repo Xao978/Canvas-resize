@@ -20,7 +20,7 @@ function tailleCanevas(partParentWidth, partParentHeight, canvas) {
 
     canvas.width = window.innerWidth*partParentWidth;
     canvas.height = window.innerHeight*partParentHeight;
-   return [canvas[0].width, canvas[0].height];        
+    return [canvas.width, canvas.height];        
 }
 
 function tracerDroiteCanevas(pt1_absc, pt1_ord, pt2_absc, pt2_ord, couleur, context) {
@@ -72,12 +72,13 @@ function tracerParallelogramme(liste3pts, couleur, context) {
 // Zone d'exécution du programme
       changerBackgroundCanvas("rgba(133, 126, 126, 0.58)", canvas[0]);
       dimCanvas = tailleCanevas(1, 1, canvas[0]);
+      tracerParallelogramme([50,300,300,100,400,300], "rgb(14, 73, 234)", c);
     //tracerArcDeCercleV3(30, [200,200],[0,2], "rgb(4, 114, 133)");
     //afficherDimensionElement("canvas");    
     //ajouterGrilleRepere(dimCanvas[0], dimCanvas[1], 50, "rgba(255, 255, 255, 0.16)");
     //creerAxesRepere(dimCanvas[0],dimCanvas[1],"rgb(13, 4, 52)");
     //tracerArcDeCercle(50+dimCanvas[0]/2, -50+dimCanvas[1]/2, dimCanvas[0]/2, dimCanvas[1]/2, 0, 2*Math.PI, "rgb(8, 116, 11)");
-    //tracerDroiteCanevas(200,200,dimCanvas[0]/2, dimCanvas[1]/2, "rgb(234, 14, 190)");
+    //tracerDroiteCanevas(200,200,dimCanvas[0]/2, dimCanvas[1]/2, "rgb(14, 73, 234)");
     
     
     
