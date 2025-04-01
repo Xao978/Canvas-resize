@@ -70,7 +70,7 @@ function tracerParallelogramme(liste3pts, couleur, context) {
 // Zone Déclarations
 
 // Zone d'exécution du programme
-      changerBackgroundCanvas("rgba(133, 126, 126, 0.58)", canvas[0]);
+      changerBackgroundCanvas(""rgb(162, 13, 105)", canvas[0]);
       dimCanvas = tailleCanevas(1, 1, canvas[0]);
       tracerParallelogramme([50,300,300,100,400,300], "rgb(14, 73, 234)", c);
     //tracerArcDeCercleV3(30, [200,200],[0,2], "rgb(4, 114, 133)");
